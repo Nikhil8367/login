@@ -208,11 +208,11 @@ async function validateLogin() {
         const studentRollNo = studentEmail.substring(0, 12);
         localStorage.setItem('studentEmail',studentEmail)
         localStorage.setItem('studentRollNo', studentRollNo);
-        window.location.href = 'main.html';
+        window.location.href = 'https://nikhil8367.github.io/student/';
       }
       else if (role === "teacher"){
         localStorage.setItem('teacherId', email);
-        window.location.href = 'admin.html';
+        window.location.href = 'https://nikhil8367.github.io/admin/';
       }
     } else {
       errorDiv.textContent = result.error || 'Login failed.';
